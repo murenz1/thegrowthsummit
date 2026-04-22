@@ -75,7 +75,7 @@ export function Attendees() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Whether you're charting your first career steps or scaling your third venture, 
+              Whether you&apos;re charting your first career steps or scaling your third venture, 
               The Growth Summit provides the insights, connections, and strategies you need 
               to accelerate your journey.
             </p>
