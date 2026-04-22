@@ -139,10 +139,25 @@ function RegistrationDialog({
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Check if email already registered
+  const isEmailRegistered = (email: string): boolean => {
+    const registeredUsers = JSON.parse(localStorage.getItem("summit_registered_users") || "[]");
+    return registeredUsers.some((user: { email: string }) => 
+      user.email.toLowerCase() === email.toLowerCase()
+    );
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
+
+    // Check for duplicate email
+    if (isEmailRegistered(formData.email)) {
+      setError("This email has already been registered. Please use a different email.");
+      setIsSubmitting(false);
+      return;
+    }
     
     try {
       // Formspree Integration
@@ -156,6 +171,16 @@ function RegistrationDialog({
       });
 
       if (response.ok) {
+        // Save registered user to localStorage
+        const registeredUsers = JSON.parse(localStorage.getItem("summit_registered_users") || "[]");
+        registeredUsers.push({
+          email: formData.email.toLowerCase(),
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          registeredAt: new Date().toISOString()
+        });
+        localStorage.setItem("summit_registered_users", JSON.stringify(registeredUsers));
+        
         setIsSuccess(true);
         onSuccess();
       } else {

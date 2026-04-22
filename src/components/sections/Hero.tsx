@@ -82,7 +82,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
           >
             <Badge className="mb-4 px-3 py-1 text-xs bg-emerald-500/10 text-emerald-400 border-emerald-500/20">
-              May 27, 2026 | University of Lagos, Lagos | Hybrid
+              May 23, 2026 | University of Lagos, Lagos | Hybrid
             </Badge>
           </motion.div>
 

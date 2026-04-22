@@ -13,14 +13,14 @@ export function Footer() {
               The Growth Summit
             </Link>
             <p className="text-slate-500 text-sm mt-1">
-              May 27, 2026 • Lagos, Nigeria
+              May 23, 2026 • Lagos, Nigeria
             </p>
           </div>
 
           <div className="flex items-center gap-6 text-sm text-slate-400">
-            <a href="mailto:info@thegrowthsummit.net" className="flex items-center gap-1 hover:text-emerald-400 transition-colors">
+            <a href="mailto:info@thegrowthssummit.com" className="flex items-center gap-1 hover:text-emerald-400 transition-colors">
               <Mail className="w-4 h-4" />
-              <span>info@thegrowthsummit.net</span>
+              <span>info.thegrowthssummit.com</span>
             </a>
           </div>
 

@@ -12,7 +12,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Image from "next/image";
-import { Linkedin, Twitter, User } from "lucide-react";
+import { Linkedin, User } from "lucide-react";
 
 interface Speaker {
   id: number;
@@ -22,52 +22,81 @@ interface Speaker {
   bio: string;
   topic: string;
   image: string;
-  imagePosition?: string; // Optional custom positioning
+  imagePosition?: string;
   linkedin?: string;
-  twitter?: string;
 }
 
 const speakers: Speaker[] = [
   {
     id: 1,
-    name: "Okunato Daniel",
-    title: "Real Estate Consultant | Sales Executive",
-    company: "GoRealty & Homes",
-    bio: "Okunato Eniola Daniel is a real estate consultant and sales executive at GoRealty & Homes, where he drives strategic property investments and works with clients across Africa’s evolving real estate landscape. Beyond business, he is a youth development advocate and the convener of 25 Under 25, an initiative targeted to gather greatminds between 18 to 25 years. People who are intentional about their growth, who wants to lead passionately and make impacts within and outside their environment. He is also the convener of THE INNER ROOM, a platform centred on powerful storytelling and transformative conversations. Daniel is known for building platforms, fostering meaningful partnerships, and helping young people move from confusion to clarity and from potential to impact.",
-    topic: "Strategic Property Investments",
-    image: "/Okunato Daniel.jpeg",
+    name: "Chika Ibobo",
+    title: "Founder & CEO",
+    company: "CI Luxe Homes | Cheey Signatures",
+    bio: "Chika Ibobo is a visionary entrepreneur, real estate strategist, and community development leader whose work seamlessly blends enterprise, leadership, and impact. She is the Founder of Cheey Signatures, a thriving beauty and hair brand built on the belief that confidence is not optional for women; it is essential. Through quality, stylish, and accessible hair solutions, she has created a brand that empowers women to show up boldly in every space they occupy. What began as a passion has grown into a respected enterprise driven by excellence, consistency, and a deep understanding of client experience. She is also the Founder and Chief Executive Officer of CI Luxe Homes, a premium real estate brand redefining modern luxury through integrity, strategic investment insight, and clientcentered service. Under her leadership, the company has built a reputation for delivering refined property solutions anchored on trust, long-term value, and sustainable growth. Her influence in the real estate sector reflects her strength in structure-building, negotiation, and strategic positioning. Chika is a multiple award-winning business leader, recognized for excellence, loyalty, and outstanding contributions to enterprise and community development. Her recognitions reflect not just performance, but consistency, resilience, and values-driven leadership. With over a decade of active service in Junior Chamber International (JCI), she has held several strategic leadership roles at both local and national levels. She served as the 2025 National Director of Communications, JCI Nigeria, leading national storytelling and strategic brand visibility. In 2026, she's serving as Chairperson, Alumni – JCI Nigeria, where she is focused on strengthening alumni engagement, building sustainable institutional partnerships, and fostering intergenerational leadership continuity. Her service extends to Rotary International, where she serves as Assistant Club Secretary and Secretary Service Chair of the Rotary Club of Akowonjo, contributing to impactful initiatives in youth development, education, and community empowerment. Chika's leadership philosophy is anchored on vision, structure, and intentional growth. She believes that true success is measured not only by what we build, but by the people we empower and the systems we leave behind. A woman of faith and purpose, she continues to build institutions, inspire leaders, and redefine what it means to lead with excellence and heart.",
+    topic: "Enterprise & Impact",
+    image: "/Chika Ibobo.jpeg",
+    imagePosition: "object-[center_top]",
     linkedin: "#",
   },
   {
     id: 2,
-    name: "Chika Ibobo",
-    title: "Founder & CEO",
-    company: "CI Luxe Homes | Cheey Signatures",
-    bio: "Chika Ibobo is a visionary entrepreneur, real estate strategist, and community development leader whose work seamlessly blends enterprise, leadership, and impact. She is the Founder of Cheey Signatures, a thriving beauty and hair brand built on the belief that confidence is not optional for women; it is essential. Through quality, stylish, and accessible hair solutions, she has created a brand that empowers women to show up boldly in every space they occupy. What began as a passion has grown into a respected enterprise driven by excellence, consistency, and a deep understanding of client experience. She is also the Founder and Chief Executive Officer of CI Luxe Homes, a premium real estate brand redefining modern luxury through integrity, strategic investment insight, and clientcentered service. Under her leadership, the company has built a reputation for delivering refined property solutions anchored on trust, long-term value, and sustainable growth. Her influence in the real estate sector reflects her strength in structure-building, negotiation, and strategic positioning. Chika is a multiple award-winning business leader, recognized for excellence, loyalty, and outstanding contributions to enterprise and community development. Her recognitions reflect not just performance, but consistency, resilience, and values-driven leadership. With over a decade of active service in Junior Chamber International (JCI), she has held several strategic leadership roles at both local and national levels. She served as the 2025 National Director of Communications, JCI Nigeria, leading national storytelling and strategic brand visibility. In 2026, she’s serving as Chairperson, Alumni – JCI Nigeria, where she is focused on strengthening alumni engagement, building sustainable institutional partnerships, and fostering intergenerational leadership continuity. Her service extends to Rotary International, where she serves as Assistant Club Secretary and Secretary Service Chair of the Rotary Club of Akowonjo, contributing to impactful initiatives in youth development, education, and community empowerment. Chika’s leadership philosophy is anchored on vision, structure, and intentional growth. She believes that true success is measured not only by what we build, but by the people we empower and the systems we leave behind. A woman of faith and purpose, she continues to build institutions, inspire leaders, and redefine what it means to lead with excellence and heart.",
-    topic: "Enterprise & Impact",
-    image: "/chika ibobo.jpeg",
-    imagePosition: "object-[center_top]", // Fix cut-off by moving image down relative to top
+    name: "Elisha Joseph",
+    title: "Speaker",
+    company: "TBD",
+    bio: "Full bio description to be provided.",
+    topic: "Leadership & Growth",
+    image: "/Elisha Joseph.jpeg",
     linkedin: "#",
   },
   {
     id: 3,
+    name: "Abraham Ocholi",
+    title: "Founder & Communications Professional",
+    company: "Thrivenest | Bridge Connect Africa",
+    bio: "Abraham Ocholi is a multipotentialite, youth advocate, and media and communications professional working at the intersection of storytelling, advocacy, and youth development. He is the Founder of Thrivenest, an impact-driven organization committed to expanding opportunities for young people. Through his work, Abraham has empowered over 10,000 youth, equipping them with the skills, knowledge, and confidence to thrive in a rapidly evolving world. He currently serves as a Communications Associate at Bridge Connect Africa, where he contributes to advancing initiatives focused on education, health, and social impact. Abraham has also collaborated on programs supported by global and institutional partners—including GIZ, TechDev, the Ford Foundation, the Kano State Government, among others—driving youth empowerment and community development. His expertise lies in strategic communication, content development, and narrative building—leveraging media as a tool to amplify youth voices, shape conversations, and foster meaningful engagement on critical social issues. Guided by the belief that young people are not just future leaders but active contributors to today's progress, Abraham is committed to building platforms that inspire a generation of socially conscious, empowered, and purpose-driven changemakers.",
+    topic: "Youth Development & Communication",
+    image: "/Abraham Ocholi.jpeg",
+    linkedin: "#",
+  },
+  {
+    id: 4,
+    name: "Isiwat Oyiza",
+    title: "Food Scientist | Development Practitioner",
+    company: "Youth Growve Africa | JCI Nigeria",
+    bio: "Isiwat Oyiza Musa is a Food Scientist and Development Practitioner with a strong focus on youth leadership, program management, and community impact. She is a graduate of Bayero University, Kano, where she earned a Bachelor's degree in Food Science and Technology. She currently serves as a National Youth Service Corps (NYSC) member in Lagos State, while actively contributing to youth development and social impact initiatives. Isiwat has experience coordinating and managing youth-focused programs, leading teams, and supporting community-based projects through various organizations including Youth Growve Africa and Junior Chamber International Nigeria. Her work spans program design, stakeholder engagement, and capacity-building for young people. She is passionate about leadership development, food systems, and creating opportunities that empower young people (especially women) to thrive and lead meaningful change in their communities.",
+    topic: "Youth Leadership & Development",
+    image: "/Isiwat Oyiza.jpeg",
+    linkedin: "#",
+  },
+  {
+    id: 5,
     name: "Megwara Favour",
     title: "Photojournalist | Media Director",
     company: "LinkedIn Local | Evolv Africa",
     bio: "Megwara Favour is a 22-year-old photojournalist accredited by APJD and a Political Science student at the University of Lagos, known for his passion for visual storytelling and music. He is a Lagos Youth Ambassador (Ibile Youth) whose strong faith in God shapes both his personal and professional journey. A serial creative, he has been featured on platforms such as 54ruum, The Guardian Newspaper, BusinessDay Newspaper, and Notesphere Blog, among others. He serves as a Director at CYDF and Evolv Africa, and as Media Director for LinkedIn Local. As a TEDx speaker and social media influencer, Favour has worked with top brands and individuals across politics, corporate spaces, and the entertainment industry.",
     topic: "Visual Storytelling",
     image: "/Megwara Favour.jpeg",
-    imagePosition: "object-[center_top]", // Fix cut-off
+    imagePosition: "object-[center_top]",
     linkedin: "#",
   },
   {
-    id: 4,
+    id: 6,
     name: "Lateef Adebayo",
     title: "Investment Advisor | Financial Analyst",
     company: "Meristem Nigeria",
     bio: "Lateef Adebayo is an investment professional and financial analyst driven by a passion for growth, value creation, and helping individuals unlock their financial potential. As an Investment Advisor at Meristem Nigeria, he provides strategic guidance that empowers clients to make informed investment decisions and build sustainable wealth. With a background that spans platform management, trading operations, and financial advisory, Lateef embodies the journey of continuous learning and becoming—leveraging data, discipline, and market insight to navigate complex financial landscapes. A graduate of Pan-Atlantic University and a certified Associate Chartered Stockbroker (ACS) and Authorized Dealing Clerk, he represents the new generation of professionals transforming knowledge into impact.",
     topic: "Financial Potential",
     image: "/Lateef Adebayo.jpeg",
+    linkedin: "#",
+  },
+  {
+    id: 7,
+    name: "Okunato Daniel",
+    title: "Real Estate Consultant | Sales Executive",
+    company: "GoRealty & Homes",
+    bio: "Okunato Eniola Daniel is a real estate consultant and sales executive at GoRealty & Homes, where he drives strategic property investments and works with clients across Africa's evolving real estate landscape. Beyond business, he is a youth development advocate and the convener of 25 Under 25, an initiative targeted to gather greatminds between 18 to 25 years. People who are intentional about their growth, who wants to lead passionately and make impacts within and outside their environment. He is also the convener of THE INNER ROOM, a platform centred on powerful storytelling and transformative conversations. Daniel is known for building platforms, fostering meaningful partnerships, and helping young people move from confusion to clarity and from potential to impact.",
+    topic: "Strategic Property Investments",
+    image: "/Okunato Daniel.jpeg",
     linkedin: "#",
   },
 ];

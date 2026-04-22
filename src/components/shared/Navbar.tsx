@@ -30,7 +30,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-xl lg:text-2xl font-black tracking-tight text-slate-900">
-              <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">GROWTH</span>
+              <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">THEGROWTH</span>
               <span className="text-slate-800">SUMMIT</span>
             </span>
           </Link>
@@ -70,7 +70,7 @@ export function Navbar() {
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between py-4 border-b border-slate-200">
                   <span className="text-lg font-black tracking-tight">
-                    <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">GROWTH</span>
+                    <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">THEGROWTH</span>
                     <span className="text-slate-800">SUMMIT</span>
                   </span>
                 </div>
